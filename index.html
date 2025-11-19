@@ -6,33 +6,39 @@
      body {
             background-color: rgb(229, 231, 235);
         }
-
     .container{
        display: flex;
        justify-content: space-evenly;
        flex-wrap: wrap;  
     }
     .item{
-         height: 380px;
+         height: 390px;
          width: 300px;
          background-color: white;
         border-radius: 10px;
-        margin: 10px;
+        margin: 5px;
         border: 1px solid rgb(237, 233, 233);
     }
-    .sub-container{
-        padding-left: 2px;
-        padding-right: 2px;
-    }
+    .item:hover {
+            border: 1px solid rgb(214, 211, 211)
+        }
+        .main-img {
+            border-radius: 10px 10px 0px 0px;
+            margin-bottom: 10px;
+        }
     .project-heading{
-        font-size: 18px;
+        font-size: 20px;
         font-weight: 550;
-        margin-bottom: 2px;
+        margin-bottom: 5px;
+    }
+    .sub-container{
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .course-name{
        background-color: rgb(200, 230, 248);
-        padding: 1px;
-        border-radius: 1px;   
+        padding: 2px;
+        border-radius: 1px;  
     }
     .project-description{
         font-size: 14px;
@@ -50,15 +56,65 @@
             font-size: 10px;
             border: 1px solid rgb(105, 105, 105);
     }
+    .project-duration
+    {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    .calender-img{
+          height:18px;
+          width:18px; 
+          margin-right: 8px;
+    }
+    .project-durationsub-info{
+         display: flex;
+        align-items: center;
+    }
+    .project-durationinfo{
+     font-size: 12px;
+     color: rgb(105, 105, 105);
+    }
+    .profile-img{
+        height: 19px;
+        margin-left: 35px;
+         border-radius: 50%;
+         margin-right: 8px;
+    }
+    .project-developer{
+        font-size: 12px;
+        color: rgb(105, 105, 105);
+    }
+    .hr-line{
+         margin: 10px 0px;
+            border: 0.5px rgb(232, 230, 230) solid;
+    }
+    .reactions{
+        display:flex;
+            border-radius: 20px;
+            font-size: 12px;
+            align-items: center;
+            gap: 10px;
+            color: rgb(105, 105, 105);  
+    }
+    .project-action{
+           display: flex;
+            align-items: center;
+            gap: 10px;
+            color: rgb(60, 60, 233);
+            justify-content: space-between;   
+            margin-left: 80px; 
+    }
 </style>
 </head>
 <body>
     <div class="container">
          <div class="item">
-         <img src="./images/mainintern.png" width="300px"/>
+         <img src="./images/mainintern.png" height="180" width="300px"/>
          <div class="sub-container">
-         <span class="project-heading">InfoTechShop</span> <br />
+         <span class="project-heading">InfoTechShop</span><br/>
          <span class="course-name">Internship Cohort Program 6.0</span>
+         <br/>
          <p class="project-description">This project serves as the foundation for an e-commerce website
          specializing in the sale of...</p>
           <div class="tech-stack">
@@ -67,10 +123,131 @@
                     <span class="tech">Javascipt</span>
           </div>
           <div class="project-duration">
-            <div class="project-duration sub-info">
-                <img src="./images/calenda.svg" height="20px" class="calender.img">
-                <span class="project-duration info">Apr 2024 - Apr 2024</span>
+            <div class="project-durationsub-info">
+        <img src="./images/calender.svg"  class="calender-img">
+                <span class="project-durationinfo">Apr 2024 - Apr 2024</span>
+                <img src="./images/profile.jpeg" class="profile-img" >
+                <span class="project-developer">Akshata Dawange</span>
             </div>
           </div>
+           <hr class="hr-line"/>
+          <div class="reactions">
+            <img src="./images/clap.svg" height="20px">
+            <span >18</span>
+            <img src="./images/comment.svg"height="20px" >
+           <span >5</span>
+           <img src="./images/share.svg" height="20px">
+           <div class="project-action">
+            <span>See more</span>
+            <img src="./images/arrow.png" height="15px"/>
+        </div>
+         </div>
+         </div>
+         </div>
+         
+         <div class="item">
+         <img src="./images/sapceship.png" height="178" width="300px"/>
+         <div class="sub-container">
+         <span class="project-heading">Spaceship</span><br/>
+         <span class="course-name">Internship Cohort Program 3.0</span>
+         <br/>
+         <p class="project-description">Spaceship is a mini Wikipedia 📖 for computer science students, created by RoadToCode.</p>
+          <div class="tech-stack">
+                    <span class="tech">HTML</span>
+                    <span class="tech">CSS</span>
+                    <span class="tech">Javascipt</span>
+          </div>
+          <div class="project-duration">
+            <div class="project-durationsub-info">
+        <img src="./images/calender.svg"  class="calender-img">
+                <span class="project-durationinfo">Jan 2023 - May 2025</span>
+                <img src="./images/profile2.webp" class="profile-img">
+                <span class="project-developer">Pinki Hole</span>
+            </div>
+          </div>
+           <hr class="hr-line"/>
+          <div class="reactions">
+            <img src="./images/clap.svg" height="20px">
+            <span >16</span>
+            <img src="./images/comment.svg"height="20px" >
+           <span >7</span>
+           <img src="./images/share.svg" height="20px">
+           <div class="project-action">
+            <span>See more</span>
+            <img src="./images/arrow.png" height="15px"/>
+    </div>
+         </div>
+        </div>
+         </div>
+
+         <div class="item">
+         <img src="./images/RTC.png" height="178"  width="300px"/>
+         <div class="sub-container">
+         <span class="project-heading">Rode To Code</span><br/>
+         <span class="course-name">Internship Cohort Program 2.0</span>
+         <br/>
+         <p class="project-description">We help you to learn the latest technologies and tools to kickstart you career in tech...</p>
+          <div class="tech-stack">
+                    <span class="tech">HTML</span>
+                    <span class="tech">CSS</span>
+                    <span class="tech">Javascipt</span>
+          </div>
+          <div class="project-duration">
+            <div class="project-durationsub-info">
+        <img src="./images/calender.svg"  class="calender-img">
+                <span class="project-durationinfo">Jan 2023 - May 2025</span>
+                <img src="./images/profile3.webp" class="profile-img">
+                <span class="project-developer">Suraj Shende</span>
+            </div>
+          </div>
+           <hr class="hr-line"/>
+          <div class="reactions">
+            <img src="./images/clap.svg" height="20px">
+            <span >16</span>
+            <img src="./images/comment.svg"height="20px" >
+           <span >7</span>
+           <img src="./images/share.svg" height="20px">
+           <div class="project-action">
+            <span>See more</span>
+            <img src="./images/arrow.png" height="15px"/>
+        </div>
+     </div>
+  </div>
+</div>
+
+         <div class="item">
+         <img src="./images/ecommerceweb.png" height="178"  width="300px"/>
+         <div class="sub-container">
+         <span class="project-heading">E-Commerce Website</span><br/>
+         <span class="course-name">Internship Cohort Program 4.0</span>
+         <br/>
+         <p class="project-description">An e-commerce website is online store where people can buy & sell products or services... </p>
+          <div class="tech-stack">
+                    <span class="tech">HTML</span>
+                    <span class="tech">CSS</span>
+                    <span class="tech">Javascipt</span>
+          </div>
+          <div class="project-duration">
+            <div class="project-durationsub-info">
+        <img src="./images/calender.svg"  class="calender-img">
+                <span class="project-durationinfo">Jan 2024 - May 2025</span>
+                <img src="./images/profile4.jpeg" class="profile-img">
+                <span class="project-developer">Sakshi Bhosale</span>
+            </div>
+          </div>
+           <hr class="hr-line"/>
+          <div class="reactions">
+            <img src="./images/clap.svg" height="20px">
+            <span >16</span>
+            <img src="./images/comment.svg"height="20px">
+           <span >7</span>
+           <img src="./images/share.svg" height="20px">
+           <div class="project-action">
+            <span>See more</span>
+            <img src="./images/arrow.png" height="15px"/>
+        </div>
+         </div>
+        </div>
+         </div>
 </body>
 </html>
